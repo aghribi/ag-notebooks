@@ -15,13 +15,14 @@ Jupyter notebooks for ag-pii-vault, ag-guardrail, ag-docparse and ag-evalforge.
 ## Setup
 
 ```bash
-pip install ag-pii-vault ag-guardrail ag-docparse ag-evalforge
+pip install "ag-pii-vault>=0.6" "ag-guardrail>=0.6" "ag-docparse>=0.6" "ag-evalforge>=0.6"
 ```
 
-Get your free API key at [ai.artifact-network.org](https://ai.artifact-network.org), then set:
+The local examples need no key. The hosted examples call a running [ag-platform](https://github.com/aghribi/ag-platform) deployment:
 
 ```bash
-export AG_API_KEY="ag_live_..."
+export AG_API_URL="https://your-ag-platform"
+export AG_API_KEY="ag_live_..."      # issued by that deployment
 export OPENAI_API_KEY="sk-..."       # optional, needed for LLM-backed features
 ```
 
